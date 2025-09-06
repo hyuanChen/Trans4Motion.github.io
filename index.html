@@ -83,19 +83,36 @@
         </div>
       </div>
     </div>
-
+    <!--
+      下面依次展示8张webp图片，路径为
+      /home/hongyuan/obj_motion/Trans4Motion.github.io/static/webps/0a_combined_0.webp
+      /home/hongyuan/obj_motion/Trans4Motion.github.io/static/webps/0a_combined_1.webp
+      ...
+      /home/hongyuan/obj_motion/Trans4Motion.github.io/static/webps/0a_combined_7.webp
+      用于展示重建和Retarget效果
+    -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Reconstruction (high to low)</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+          <!-- 依次插入8张webp图片 -->
+          <img src="static/webps/0a_combined_0.webp" alt="0a_combined_0" style="max-width: 23%; height: auto; margin-bottom: 10px;">
+          <img src="static/webps/0a_combined_1.webp" alt="0a_combined_1" style="max-width: 23%; height: auto; margin-bottom: 10px;">
+          <img src="static/webps/0a_combined_2.webp" alt="0a_combined_2" style="max-width: 23%; height: auto; margin-bottom: 10px;">
+          <img src="static/webps/0a_combined_3.webp" alt="0a_combined_3" style="max-width: 23%; height: auto; margin-bottom: 10px;">
+          <img src="static/webps/0a_combined_4.webp" alt="0a_combined_4" style="max-width: 23%; height: auto; margin-bottom: 10px;">
+          <img src="static/webps/0a_combined_5.webp" alt="0a_combined_5" style="max-width: 23%; height: auto; margin-bottom: 10px;">
+          <img src="static/webps/0a_combined_6.webp" alt="0a_combined_6" style="max-width: 23%; height: auto; margin-bottom: 10px;">
+          <img src="static/webps/0a_combined_7.webp" alt="0a_combined_7" style="max-width: 23%; height: auto; margin-bottom: 10px;">
+        </div>
       </div>
     </div>
+    <!--
+      下面保留Retarget标题，但去掉原有视频，方便后续添加其它内容
+    -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+        <h2 class="title is-3">Retarget</h2>
       </div>
     </div>
     </div>
