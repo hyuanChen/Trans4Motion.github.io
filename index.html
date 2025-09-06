@@ -99,17 +99,23 @@
         <h2 class="title is-3">Reconstruction (high to low)</h2>
         <div style="display: flex; flex-direction: column; align-items: center; gap: 0;">
           <!-- 依次插入8张webp图片，每行一张，宽度100%，最大化展示 -->
-          <img src="static/webps/0a_combined_0.webp" alt="0a_combined_0" style="width: 100%; height: auto; margin: 0; padding: 0;">
-          <img src="static/webps/0a_combined_1.webp" alt="0a_combined_1" style="width: 100%; height: auto; margin: 0; padding: 0;">
-          <img src="static/webps/0a_combined_2.webp" alt="0a_combined_2" style="width: 100%; height: auto; margin: 0; padding: 0;">
-          <img src="static/webps/0a_combined_3.webp" alt="0a_combined_3" style="width: 100%; height: auto; margin: 0; padding: 0;">
-          <img src="static/webps/0a_combined_4.webp" alt="0a_combined_4" style="width: 100%; height: auto; margin: 0; padding: 0;">
-          <img src="static/webps/0a_combined_5.webp" alt="0a_combined_5" style="width: 100%; height: auto; margin: 0; padding: 0;">
-          <img src="static/webps/0a_combined_6.webp" alt="0a_combined_6" style="width: 100%; height: auto; margin: 0; padding: 0;">
-          <img src="static/webps/0a_combined_7.webp" alt="0a_combined_7" style="width: 100%; height: auto; margin: 0; padding: 0;">
+          <!-- 
+            让图片显示得更大：去掉外层div的最大宽度限制，并让图片撑满视口宽度。
+            这里设置图片宽度为100vw（视口宽度），并去除所有margin/padding/border，确保图片最大化显示。
+            注意：如果页面有左右padding，建议将外层div的padding/margin也设为0。
+          -->
+          <img src="static/webps/0a_combined_0.webp" alt="0a_combined_0" style="width: 100vw; max-width: 100vw; height: auto; margin: 0; padding: 0; display: block; border: none;">
+          <img src="static/webps/0a_combined_1.webp" alt="0a_combined_1" style="width: 100vw; max-width: 100vw; height: auto; margin: 0; padding: 0; display: block; border: none;">
+          <img src="static/webps/0a_combined_2.webp" alt="0a_combined_2" style="width: 100vw; max-width: 100vw; height: auto; margin: 0; padding: 0; display: block; border: none;">
+          <img src="static/webps/0a_combined_3.webp" alt="0a_combined_3" style="width: 100vw; max-width: 100vw; height: auto; margin: 0; padding: 0; display: block; border: none;">
+          <img src="static/webps/0a_combined_4.webp" alt="0a_combined_4" style="width: 100vw; max-width: 100vw; height: auto; margin: 0; padding: 0; display: block; border: none;">
+          <img src="static/webps/0a_combined_5.webp" alt="0a_combined_5" style="width: 100vw; max-width: 100vw; height: auto; margin: 0; padding: 0; display: block; border: none;">
+          <img src="static/webps/0a_combined_6.webp" alt="0a_combined_6" style="width: 100vw; max-width: 100vw; height: auto; margin: 0; padding: 0; display: block; border: none;">
+          <img src="static/webps/0a_combined_7.webp" alt="0a_combined_7" style="width: 100vw; max-width: 100vw; height: auto; margin: 0; padding: 0; display: block; border: none;">
         </div>
       </div>
     </div>
+    <!--
       下面保留Retarget标题，但去掉原有视频，方便后续添加其它内容
     -->
     <div class="columns is-centered has-text-centered">
