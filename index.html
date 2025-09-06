@@ -91,23 +91,25 @@
       /home/hongyuan/obj_motion/Trans4Motion.github.io/static/webps/0a_combined_7.webp
       用于展示重建和Retarget效果
     -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+    <!-- 
+      每行只展示一张webp图片，图片宽度100%，高度自适应，最大化单张图片展示效果
+    -->
+    <div class="columns is-centered has-text-centered" style="margin: 0; padding: 0;">
+      <div class="column" style="width: 100%; max-width: 100%; padding: 0;">
         <h2 class="title is-3">Reconstruction (high to low)</h2>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-          <!-- 依次插入8张webp图片 -->
-          <img src="static/webps/0a_combined_0.webp" alt="0a_combined_0" style="max-width: 23%; height: auto; margin-bottom: 10px;">
-          <img src="static/webps/0a_combined_1.webp" alt="0a_combined_1" style="max-width: 23%; height: auto; margin-bottom: 10px;">
-          <img src="static/webps/0a_combined_2.webp" alt="0a_combined_2" style="max-width: 23%; height: auto; margin-bottom: 10px;">
-          <img src="static/webps/0a_combined_3.webp" alt="0a_combined_3" style="max-width: 23%; height: auto; margin-bottom: 10px;">
-          <img src="static/webps/0a_combined_4.webp" alt="0a_combined_4" style="max-width: 23%; height: auto; margin-bottom: 10px;">
-          <img src="static/webps/0a_combined_5.webp" alt="0a_combined_5" style="max-width: 23%; height: auto; margin-bottom: 10px;">
-          <img src="static/webps/0a_combined_6.webp" alt="0a_combined_6" style="max-width: 23%; height: auto; margin-bottom: 10px;">
-          <img src="static/webps/0a_combined_7.webp" alt="0a_combined_7" style="max-width: 23%; height: auto; margin-bottom: 10px;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+          <!-- 依次插入8张webp图片，每行一张，宽度100%，最大化展示 -->
+          <img src="static/webps/0a_combined_0.webp" alt="0a_combined_0" style="width: 100%; height: auto; margin: 0; padding: 0;">
+          <img src="static/webps/0a_combined_1.webp" alt="0a_combined_1" style="width: 100%; height: auto; margin: 0; padding: 0;">
+          <img src="static/webps/0a_combined_2.webp" alt="0a_combined_2" style="width: 100%; height: auto; margin: 0; padding: 0;">
+          <img src="static/webps/0a_combined_3.webp" alt="0a_combined_3" style="width: 100%; height: auto; margin: 0; padding: 0;">
+          <img src="static/webps/0a_combined_4.webp" alt="0a_combined_4" style="width: 100%; height: auto; margin: 0; padding: 0;">
+          <img src="static/webps/0a_combined_5.webp" alt="0a_combined_5" style="width: 100%; height: auto; margin: 0; padding: 0;">
+          <img src="static/webps/0a_combined_6.webp" alt="0a_combined_6" style="width: 100%; height: auto; margin: 0; padding: 0;">
+          <img src="static/webps/0a_combined_7.webp" alt="0a_combined_7" style="width: 100%; height: auto; margin: 0; padding: 0;">
         </div>
       </div>
     </div>
-    <!--
       下面保留Retarget标题，但去掉原有视频，方便后续添加其它内容
     -->
     <div class="columns is-centered has-text-centered">
